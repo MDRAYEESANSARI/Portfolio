@@ -40,7 +40,7 @@
           </div>
           <div>
             <div class="btn">
-              <button>Get My Resume</button> <button>Hire Me</button>
+              <button id="downloadBtn">Get My Resume</button> <button id="downloadBtn">Hire Me</button>
             </div>
           </div>
         </div>
@@ -49,15 +49,15 @@
           <div>
             <div class="social-links">
               <a
-                href="https://in.linkedin.com/in/md-rayees-a-677323214?trk=people-guest_people_search-card"
+                href="#"
                 ><img src="github-icon-.png" alt=""
               /></a>
               <a
-                href="https://in.linkedin.com/in/md-rayees-a-677323214?trk=people-guest_people_search-card"
+                href="#"
                 ><img src="linkedin.svg" alt=""
               /></a>
               <a
-                href="https://in.linkedin.com/in/md-rayees-a-677323214?trk=people-guest_people_search-card"
+                href="#"
                 ><img src="code.svg" alt=""
               /></a>
             </div>
@@ -272,6 +272,13 @@
         },{ duration: 500, fill: "forwards"});
 
       });
+
+
+    document.getElementById('downloadBtn').addEventListener('click', function() {
+        window.location.href = 'resume.pdf';
+    });
+
     </script>
+
   </body>
 </html>
